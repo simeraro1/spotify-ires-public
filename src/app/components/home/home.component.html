@@ -1,0 +1,7 @@
+<!-- @let tracks = (tracks$ | async);
+
+<pre>{{ tracks | json }}</pre> -->
+
+<ng-container *ngIf="user$|async as user">
+    <h1>{{user.display_name}}</h1>
+</ng-container>
